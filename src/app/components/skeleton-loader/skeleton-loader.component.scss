@@ -1,0 +1,45 @@
+.animate-pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #e0e0e0;
+    }
+
+    50% {
+        background-color: #f5f5f5;
+    }
+
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+
+.bg-gray-300 {
+    background-color: #e0e0e0;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+
+.h-4 {
+    height: 1rem;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.w-3\/4 {
+    width: 75%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-5\/6 {
+    width: 83.333333%;
+}

@@ -1,0 +1,18 @@
+<div class="flex flex-col min-h-screen relative">
+    <div id="progress-page" *ngIf="showProgressBar" style="height: 7px; background-color: white">
+        <mat-progress-bar mode="indeterminate" color="secondary"></mat-progress-bar>
+    </div>
+    <div class="app-container px-4 pt-4 grow bg-[#FBF9F7] flex flex-col">
+        <div class="main-container grow flex flex-col ">
+            <div class="sticky top-0 left-0 w-full z-10">
+                <app-header></app-header>
+            </div>
+            <div class="pt-12 pb-10   grow border-l border-r border-[#EFEDEB] mx-2 flex flex-col gap-10 px-4">
+                <div class="grow">
+                    <router-outlet />
+                </div>
+                <app-footer></app-footer>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,485 @@
+@mixin px-to-rem($px, $base-font-size: 16) {
+    // $base-font-size est la taille de base en pixels (par défaut : 16px)
+    $rem: $px / $base-font-size;
+    font-size: #{$rem}rem;
+}
+
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "DMSans-Bold";
+    src: url(../public/fonts/DM_Sans/static/DMSans-Bold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: "DMSans-ExtraBold";
+    src: url(../public/fonts/DM_Sans/static/DMSans-ExtraBold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: "DMSans-Italic";
+    src: url(../public/fonts/DM_Sans/static/DMSans-Italic.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: "DMSans-Medium";
+    src: url(../public/fonts/DM_Sans/static/DMSans-Medium.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: "DMSans-Regular";
+    src: url(../public/fonts/DM_Sans/static/DMSans-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: "DMSans-SemiBold";
+    src: url(../public/fonts/DM_Sans/static/DMSans-SemiBold.ttf) format("opentype");
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+// ol,
+// ul,
+// li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    // border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    // list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.text-on-1-line,
+.text-on-2-line,
+.text-on-3-line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text-on-1-line {
+    -webkit-line-clamp: 1;
+}
+
+.text-on-2-line {
+    -webkit-line-clamp: 2;
+}
+
+.text-on-3-line {
+    -webkit-line-clamp: 3;
+}
+
+.main-container {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bottomBorderLined {
+    position: relative;
+    max-width: max-content;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #93CEFC;
+        position: absolute;
+        bottom: .5px;
+        left: 0;
+
+    }
+}
+
+.title-tiret {
+    position: relative;
+    max-width: max-content;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        left: calc(100% + 12px);
+        bottom: 10px;
+        width: 40px;
+        height: 3px;
+        background-color: #93CEFC;
+
+    }
+}
+
+.article-content {
+
+
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #EFEDEB;
+        margin: 24px 0;
+    }
+
+    p,
+    a {
+        @include px-to-rem(18);
+        color: #4A4846;
+        line-height: 140%;
+        letter-spacing: -.2px;
+        margin-top: 12px;
+    }
+
+    a {
+        position: relative;
+        max-width: max-content;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #93CEFC;
+            position: absolute;
+            bottom: .5px;
+            left: 0;
+
+        }
+    }
+
+    ol,
+    ul {
+        font-size: 1.125rem;
+        color: #4A4846;
+        line-height: 150%;
+        letter-spacing: -.2px;
+        margin-top: 12px;
+
+        list-style: initial;
+        /* Rétablit les puces ou la numérotation par défaut */
+        margin: revert;
+        /* Rétablit les marges par défaut */
+        padding: revert;
+        /* Rétablit les espacements internes par défaut */
+        font-size: revert;
+        /* Rétablit la taille de police par défaut */
+        color: revert;
+        /* Rétablit la couleur par défaut */
+        line-height: revert;
+        /* Rétablit la hauteur de ligne par défaut */
+        letter-spacing: revert;
+        /* Rétablit l'espacement des lettres par défaut */
+
+        li {
+            margin-top: 12px;
+        }
+
+    }
+
+    ol {
+        list-style: decimal;
+    }
+
+
+
+    em {
+        @include px-to-rem(18);
+        font-style: italic;
+        color: #4A4846;
+        line-height: 140%;
+        letter-spacing: -.2px;
+    }
+
+
+
+    blockquote {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: #4A4846;
+        border-left: 4px solid #93CEFC;
+        padding: 12px;
+        margin-top: 12px;
+        background-color: #FBF9F7;
+        border-radius: 4px;
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    pre {
+        background-color: #F5F5F5;
+        /* Couleur de fond douce */
+        color: #2D2D2D;
+        /* Couleur du texte */
+        padding: 16px;
+        /* Espacement interne */
+        border-radius: 8px;
+        /* Coins arrondis */
+        overflow-x: auto;
+        /* Ajoute un défilement horizontal si nécessaire */
+        font-family: 'Courier New', Courier, monospace;
+        /* Police monospace */
+        font-size: 0.95rem;
+        /* Taille de police légèrement réduite */
+        line-height: 1.5;
+        /* Hauteur de ligne pour une meilleure lisibilité */
+        border: 1px solid #E0E0E0;
+        /* Bordure légère */
+        margin: 16px 0;
+        /* Espacement vertical */
+    }
+
+    /* Styles pour le texte inline dans les blocs de code */
+    code {
+        background-color: #F5F5F5;
+        /* Même couleur de fond que <pre> */
+        color: #D6336C;
+        /* Couleur pour le texte inline */
+        padding: 2px 4px;
+        /* Espacement interne */
+        border-radius: 4px;
+        /* Coins arrondis */
+        font-family: 'Courier New', Courier, monospace;
+        /* Police monospace */
+        font-size: 0.9rem;
+        /* Taille de police légèrement réduite */
+    }
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 130%;
+    letter-spacing: -.5px;
+    color: #34302D;
+}
+
+h1 {
+    @include px-to-rem(40);
+    font-weight: 800;
+}
+
+h2 {
+    @include px-to-rem(32);
+    font-weight: bold;
+
+}
+
+h3 {
+    @include px-to-rem(28);
+    font-weight: bold;
+}
+
+h4 {
+    @include px-to-rem(20);
+    font-weight: 600;
+}
+
+h5 {
+    @include px-to-rem(28);
+    font-weight: bold;
+}
+
+h6 {
+    line-height: 150%;
+    letter-spacing: -.5px;
+    @include px-to-rem(18);
+    font-weight: 500;
+}
+
+strong {
+    @include px-to-rem(18);
+    line-height: 140%;
+    letter-spacing: -.2px;
+    color: #4A4846;
+    font-weight: 700;
+    letter-spacing: -.2px;
+    margin-top: 12px;
+}
+
+p {
+    font-size: 1.125rem;
+    color: #4A4846;
+    line-height: 140%;
+    letter-spacing: -.2px;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -.5px;
+    color: #34302D;
+}
+
+input {
+    height: 52px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #FEFEFE;
+    border: 1px solid #DEDCDA;
+    padding: 0 16px;
+}
+
+input,
+input::placeholder {
+    font-size: 1.125rem;
+    color: #4A4846;
+    line-height: 150%;
+    letter-spacing: -.2px;
+}
+
+input:focus {
+    outline: 1px solid #93CEFC;
+}
+
+button {
+    height: 52px;
+    max-width: max-content;
+    border-radius: 10px;
+    padding: 0 24px;
+    border: none;
+    background-color: #93CEFC;
+    color: #1C1A19;
+    font-size: 1.125rem;
+    color: #4A4846;
+    line-height: 150%;
+    letter-spacing: -.5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}

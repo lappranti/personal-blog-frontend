@@ -1,0 +1,28 @@
+ ol,
+ ul {
+     font-size: 1.125rem;
+     color: #4A4846;
+     line-height: 150%;
+     letter-spacing: -.2px;
+     margin-top: 12px;
+
+     list-style: initial;
+     /* Rétablit les puces ou la numérotation par défaut */
+     margin: revert;
+     /* Rétablit les marges par défaut */
+     padding: revert;
+     /* Rétablit les espacements internes par défaut */
+     font-size: revert;
+     /* Rétablit la taille de police par défaut */
+     color: revert;
+     /* Rétablit la couleur par défaut */
+     line-height: revert;
+     /* Rétablit la hauteur de ligne par défaut */
+     letter-spacing: revert;
+     /* Rétablit l'espacement des lettres par défaut */
+
+     li {
+         margin-top: 12px;
+     }
+
+ }
