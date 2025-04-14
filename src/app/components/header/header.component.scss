@@ -20,3 +20,22 @@
         }
     }
 }
+
+.menumobile {
+    display: none;
+}
+
+@media screen and (max-width:640px) {
+    .menumobile {
+        display: block;
+        transition: all 0.3s ease-in-out;
+
+        &.hidden {
+            display: none;
+        }
+
+        &.visible {
+            display: block;
+        }
+    }
+}

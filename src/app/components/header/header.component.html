@@ -1,16 +1,27 @@
-<div class="w-full p-[6px] rounded-[10px] bg-[#FEFEFE] drop-shadow-sm flex items-center justify-between">
+<div class="relative w-full p-[6px] rounded-[10px] bg-[#FEFEFE] drop-shadow-sm flex items-center justify-between">
     <div class="w-10 h-10 relative" routerLink="/home">
         <img src="./images/img-logo.png" class="absolute top-0 left-0 w-full h-full object-cover" alt="">
     </div>
     <div class="flex items-center gap-4">
-        <ul class="flex gap-5 text-[#4A4846] items-center">
+        <ul class="sm:flex hidden gap-5 text-[#4A4846] items-center">
             <li *ngFor="let nav of navItems">
                 <a [routerLink]="nav.path" routerLinkActive="active" class="nav-item relative">{{nav.name}}</a>
             </li>
         </ul>
-        <button
-            class="h-10 w-10 rounded-lg bg-[#FBF9F7] border border-[#EFEDEB] relative  flex items-center justify-center">
-            <img class="absolute " src="./images/icon-moon.svg" alt="">
+        <button (click)="toggleMenuMobile()" class="h-10 w-10 rounded-lg flex items-center justify-center sm:hidden">
+            <mat-icon class="flex items-center justify-self-center">{{ menuMobile ? 'close' : 'menu' }}</mat-icon>
+        </button>
+        <button class="h-10 w-10 rounded-lg bg-[#FBF9F7] border border-[#EFEDEB]   flex items-center justify-center">
+            <img class="" src="./images/icon-moon.svg" alt="">
         </button>
     </div>
+    <ul [@menuAnimation]="menuMobile ? 'visible' : 'hidden'"
+        class="menumobile !sm:hidden bg-white rounded-md p-3 border  border-[#EFEDEB] z-10 flex  flex-col  absolute s top-16 left-0 right-0 gap-0 text-[#4A4846] ">
+        <li *ngFor="let nav of navItems; let last = last" class=" flex">
+            <a (click)="toggleMenuMobile()" [routerLink]="nav.path" routerLinkActive="active"
+                class="  py-[6px]  min-w-full  relative">{{
+                nav.name }}</a>
+            <div *ngIf="!last" class="h-[1px] w-full bg-[#EFEDEB] flex  "></div>
+        </li>
+    </ul>
 </div>

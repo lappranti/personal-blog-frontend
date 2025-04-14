@@ -3,14 +3,16 @@
         <mat-progress-bar mode="indeterminate" color="secondary"></mat-progress-bar>
     </div>
     <div class="app-container px-4 pt-4 grow bg-[#FBF9F7] flex flex-col">
-        <div class="main-container grow flex flex-col ">
+        <div class="main-container grow flex flex-col gap-8 md:gap-12">
             <div class="sticky top-0 left-0 w-full z-10">
                 <app-header></app-header>
             </div>
-            <div class="pt-12 pb-10   grow border-l border-r border-[#EFEDEB] mx-2 flex flex-col gap-10 px-4">
+            <div
+                class="md:pb-8 pb-8    grow border-l border-r border-[#EFEDEB] mx-2 flex flex-col gap-8 md:gap-10 px-4">
                 <div class="grow">
                     <router-outlet />
                 </div>
+                <div class="w-full h-[1px] bg-[#EFEDEB]"></div>
                 <app-footer></app-footer>
             </div>
         </div>
