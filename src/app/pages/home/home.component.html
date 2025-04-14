@@ -4,26 +4,26 @@
     </h2>
     <div class="flex flex-col gap-4">
         <p class="text-lg text-[#4A4846]">
-            I’m on a journey to become a front-end web developer. I love building little projects, trying out new coding
-            techniques,
-            and sharing what I learn along the way. When I’m not at my desk, you’ll find me reading, hiking through the
-            mountains,
-            or challenging myself on rock-climbing walls.
+            Je suis en chemin pour devenir développeur web front-end. J'adore créer de petits projets, essayer de
+            nouvelles
+            techniques de codage et partager ce que j'apprends en cours de route. Quand je ne suis pas à mon bureau,
+            vous me
+            trouverez en train de lire, de randonner dans les montagnes ou de me lancer des défis sur des murs
+            d'escalade.
 
         </p>
 
         <p class="text-lg text-[#4A4846]">
-            I started this blog to document my progress, keep myself accountable, and hopefully inspire anyone else
-            who’s
-            learning
-            to code. Welcome to my corner of the internet, and thanks for stopping by!
+            J'ai créé ce blog pour documenter mes progrès, me responsabiliser et, je l'espère, inspirer d'autres
+            personnes qui
+            apprennent à coder. Bienvenue dans mon coin d'internet, et merci de votre visite !
         </p>
     </div>
     <app-social-links></app-social-links>
 </div>
 <div class="divider w-full my-8 md:my-12 h-[1px] bg-[#EFEDEB]  "></div>
 <div class="flex flex-col gap-8">
-    <p class="title-tiret text-3xl text-[#34302D] leading-[1.3] tracking-[-0.5px] font-extrabold">Latest Articles</p>
+    <p class="title-tiret text-3xl text-[#34302D] leading-[1.3] tracking-[-0.5px] font-extrabold">Derniers Articles</p>
     <!-- Skeleton Loader -->
     <div *ngIf="isLoading" class="flex flex-col gap-6 ">
         <div *ngFor="let _ of [1, 2, 3, 4, 5, 6];let last=last">
@@ -46,6 +46,6 @@
                 </span>
             </li>
         </ul>
-        <a routerLink="/blog" class="bottomBorderLined">View all articles</a>
+        <a routerLink="/blog" class="bottomBorderLined">Voir tous les articles</a>
     </div>
 </div>
