@@ -1,6 +1,6 @@
 @mixin px-to-rem($px, $base-font-size: 16) {
     // $base-font-size est la taille de base en pixels (par défaut : 16px)
-    $rem: $px / $base-font-size;
+    $rem: calc($px / $base-font-size);
     font-size: #{$rem}rem;
 }
 

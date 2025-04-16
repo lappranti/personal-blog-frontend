@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Article } from '../../models/article';
+import { environment } from '../../../../environments/environments';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ApiService {
-  baseUrl = 'https://personal-blog-backend-7vjc.onrender.com/api/blog';
+  baseUrl = environment.API_BASE_URL;
   constructor(private http: HttpClient) {}
 
   getAllPosts() {
