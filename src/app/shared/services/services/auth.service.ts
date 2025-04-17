@@ -32,7 +32,7 @@ export class AuthService {
     newUser.createdAt = new Date();
     return this.http.post(`${this.apiUrl}/signup`, newUser).pipe(
       tap((res: any) => {
-        console.log(res);
+        //console.log(res);
 
         const session = res as Session;
         this.finalizeAuthentification(session);

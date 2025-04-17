@@ -34,11 +34,11 @@ export class NewsletterComponent implements OnInit {
   onSubmit() {
     if (this.form.valid) {
       // Simulez l'envoi de l'e-mail (remplacez par un appel API réel)
-      console.log('Email submitted:', this.form.value);
+      //console.log('Email submitted:', this.form.value);
       this.message = 'Thank you for subscribing to the newsletter!';
       this.form.patchValue({ email: '' }); // Réinitialise le champ e-mail
     } else {
-      console.log(this.form.value);
+      //console.log(this.form.value);
 
       this.message = 'Please enter a valid email address.';
     }

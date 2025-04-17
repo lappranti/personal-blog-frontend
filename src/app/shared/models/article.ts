@@ -5,6 +5,8 @@ export interface Article {
   description: string;
   content: string;
   addBy: string;
+  categorie: string;
+  imageUrl: string;
   createdAt: Date;
   updatedAt: Date;
 }

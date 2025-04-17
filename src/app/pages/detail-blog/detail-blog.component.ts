@@ -27,7 +27,7 @@ export class DetailBlogComponent implements AfterViewInit {
   ) {
     activatedRoute.params.subscribe((route) => {
       this.slug = route['slug'];
-      // console.log(this.slug);
+      // //console.log(this.slug);
       if (this.slug) {
         this.getArticle();
       }
@@ -43,13 +43,12 @@ export class DetailBlogComponent implements AfterViewInit {
       );
       this.article.content = parsedMarkdown;
       // Prism.highlightAll();
-      // console.log(this.article);
+      // //console.log(this.article);
     });
   }
 
   ngAfterViewInit() {
-    console.log(Prism);
-
+    //console.log(Prism);
     // Prism.highlightAll(); // Applique la coloration syntaxique
   }
 }

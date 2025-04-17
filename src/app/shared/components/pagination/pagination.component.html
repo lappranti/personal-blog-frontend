@@ -1,0 +1,13 @@
+<div class="pagination-container">
+    <button class="btn-prev" [disabled]="isDisabled('prev')" (click)="goToPage(currentPage - 1)">
+        <mat-icon>chevron_left</mat-icon>
+    </button>
+
+    <span class="page-numbers">
+        Page {{ currentPage }} sur {{ totalPages }}
+    </span>
+
+    <button class="btn-next" [disabled]="isDisabled('next')" (click)="goToPage(currentPage + 1)">
+        <mat-icon>chevron_right</mat-icon>
+    </button>
+</div>

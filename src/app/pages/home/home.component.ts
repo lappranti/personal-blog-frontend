@@ -5,6 +5,7 @@ import { SocialLinksComponent } from '../../components/social-links/social-links
 import { Article } from '../../shared/models/article';
 import { ApiService } from '../../shared/services/api/api.service';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
+import { CardArticleComponent } from '../../components/card-article/card-article.component';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skelet
     RouterLink,
     SocialLinksComponent,
     SkeletonLoaderComponent,
+    CardArticleComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
