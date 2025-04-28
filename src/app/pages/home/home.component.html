@@ -30,7 +30,7 @@
 <div class="flex flex-col gap-8">
     <p class="title-tiret text-3xl text-[#34302D] leading-[1.3] tracking-[-0.5px] font-extrabold">Derniers Articles</p>
     <!-- Skeleton Loader -->
-    <div *ngIf="isLoading" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-6 ">
+    <div *ngIf="isLoading" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 ">
         <div *ngFor="let _ of [1, 2, 3, 4, 5, 6];let last=last">
             <app-skeleton-loader></app-skeleton-loader>
             <!-- <div *ngIf="!last" class="divider w-full  my-5 h-[1px] bg-[#EFEDEB]  "></div> -->
@@ -38,7 +38,7 @@
     </div>
     <!-- Liste des articles -->
     <div *ngIf="!isLoading" class="flex flex-col gap-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-6 ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 ">
             <app-card-article *ngFor="let article of articles" [article]="article"></app-card-article>
         </div>
         <a routerLink="/blog" class="bottomBorderLined">Voir tous les articles</a>
