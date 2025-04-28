@@ -200,7 +200,7 @@ table {
 }
 
 .main-container {
-    max-width: 640px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
@@ -453,6 +453,7 @@ input {
     background-color: #FEFEFE;
     border: 1px solid #DEDCDA;
     padding: 0 16px;
+    max-width: 400px;
 }
 
 input,

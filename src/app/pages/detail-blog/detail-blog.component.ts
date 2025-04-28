@@ -42,13 +42,13 @@ export class DetailBlogComponent implements AfterViewInit {
         marked.parse(this.article.content)
       );
       this.article.content = parsedMarkdown;
-      // Prism.highlightAll();
+      Prism.highlightAll();
       // //console.log(this.article);
     });
   }
 
   ngAfterViewInit() {
     //console.log(Prism);
-    // Prism.highlightAll(); // Applique la coloration syntaxique
+    Prism.highlightAll(); // Applique la coloration syntaxique
   }
 }
