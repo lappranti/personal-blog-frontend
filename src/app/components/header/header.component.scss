@@ -39,3 +39,43 @@
         }
     }
 }
+
+.header {
+    transition: all .3s;
+
+    .btn-toggle-theme {
+        transition: all .3s;
+    }
+
+    &.light {
+        background-color: #FEFEFE;
+        border-color: #EFEDEB;
+        color: #4A4846;
+
+        .active {
+            color: #34302D;
+        }
+
+        .btn-toggle-theme {
+            border-color: #EFEDEB;
+            background-color: #FBF9F7;
+            color: #1C1A19;
+        }
+    }
+
+    &.dark {
+        background-color: #201E1D;
+        border-color: #34302D;
+        color: #C0BFBF;
+
+        .active {
+            color: #FEFEFE;
+        }
+
+        .btn-toggle-theme {
+            border-color: #34302D;
+            background-color: #1C1A19;
+            color: #FEFEFE;
+        }
+    }
+}

@@ -37,146 +37,10 @@
 }
 
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-// ol,
-// ul,
-// li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    // border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    // list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 
 .text-on-1-line,
@@ -253,7 +117,6 @@ table {
     p,
     a {
         @include px-to-rem(18);
-        color: #4A4846;
         line-height: 140%;
         letter-spacing: -.2px;
         margin-top: 12px;
@@ -279,7 +142,6 @@ table {
     ol,
     ul {
         font-size: 1.125rem;
-        color: #4A4846;
         line-height: 150%;
         letter-spacing: -.2px;
         margin-top: 12px;
@@ -385,7 +247,8 @@ h4,
 h5 {
     line-height: 130%;
     letter-spacing: -.5px;
-    color: #34302D;
+    transition: color .3s;
+    color: var(--heading-color);
 }
 
 h1 {
@@ -409,8 +272,9 @@ h4 {
     font-weight: 600;
 }
 
+
 h5 {
-    @include px-to-rem(28);
+    @include px-to-rem(20);
     font-weight: bold;
 }
 
@@ -433,18 +297,19 @@ strong {
 
 p {
     font-size: 1.125rem;
-    color: #4A4846;
     line-height: 140%;
     letter-spacing: -.2px;
 }
 
-h4 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 130%;
-    letter-spacing: -.5px;
-    color: #34302D;
+p,
+ul,
+li,
+ol,
+a {
+    color: var(--regular-text-color);
 }
+
+
 
 input {
     height: 52px;
@@ -466,4 +331,36 @@ input::placeholder {
 
 input:focus {
     outline: 1px solid #93CEFC;
+}
+
+
+
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* styles.css */
+
+:root {
+    .light {
+        --heading-color: #34302D;
+        --regular-text-color: #4A4846;
+        --background-color: #FBF9F7;
+    }
+}
+
+.dark {
+    --background-color: #1C1A19;
+    --heading-color: #FEFEFE;
+    --regular-text-color: #C0BFBF
 }

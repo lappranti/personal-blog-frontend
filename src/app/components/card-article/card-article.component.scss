@@ -1,0 +1,13 @@
+.card {
+    transition: all .3s;
+
+    &.light {
+        background-color: #FEFEFE;
+        border-color: #EFEDEB;
+    }
+
+    &.dark {
+        background-color: #201E1D;
+        border-color: #34302D;
+    }
+}

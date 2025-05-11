@@ -1,24 +1,23 @@
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
     <div class="flex flex-col gap-6 justify-center">
-        <h2 class="bottomBorderLined relative after:!h-[5px] ">
+        <h2 class=" bottomBorderLined relative after:!h-[5px] ">
             Hi, I’m Ndeury 👋
         </h2>
-        <div class="flex flex-col gap-4">
-            <p class="text-lg text-[#4A4846]">
-                Je suis en chemin pour devenir développeur web front-end. J'adore créer de petits projets, essayer de
-                nouvelles
-                techniques de codage et partager ce que j'apprends en cours de route. Quand je ne suis pas à mon bureau,
-                vous me
-                trouverez en train de lire, de randonner dans les montagnes ou de me lancer des défis sur des murs
-                d'escalade.
-
+        <div class="flex flex-col gap-4  ">
+            <p class="text-lg ">
+                Je suis développeur web passionné, spécialisé en front-end, avec une touche de back-end pour équilibrer
+                le tout.
+                J'adore concevoir des expériences utilisateur élégantes et fonctionnelles, tout en explorant les
+                subtilités du
+                développement côté serveur.
             </p>
 
-            <p class="text-lg text-[#4A4846]">
-                J'ai créé ce blog pour documenter mes progrès, me responsabiliser et, je l'espère, inspirer d'autres
-                personnes qui
-                apprennent à coder. Bienvenue dans mon coin d'internet, et merci de votre visite !
+            <p class="text-lg ">
+                Ce blog est mon espace pour partager des astuces, des idées et des projets qui m'inspirent, tout en
+                connectant avec
+                d'autres développeurs et curieux de tech. Merci d'être là, et bienvenue dans mon univers numérique !
             </p>
+
         </div>
         <app-social-links></app-social-links>
     </div>
@@ -26,9 +25,11 @@
         <img src="./images/learn-coding.png" alt="">
     </div>
 </div>
-<div class="divider w-full my-8 md:my-12 h-[1px] bg-[#EFEDEB]  "></div>
+<div class="divider w-full my-8 md:my-12 h-[1px]   " [ngClass]="currentTheme==='light'?'bg-[#EFEDEB]':'bg-[#34302D]'">
+</div>
 <div class="flex flex-col gap-8">
-    <p class="title-tiret text-3xl text-[#34302D] leading-[1.3] tracking-[-0.5px] font-extrabold">Derniers Articles</p>
+    <h2 class="title-tiret   leading-[1.3] tracking-[-0.5px] font-extrabold  "
+        [ngClass]="currentTheme==='light'?'text-[#34302D]':'text-[#FEFEFE]'">Derniers Articles</h2>
     <!-- Skeleton Loader -->
     <div *ngIf="isLoading" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 ">
         <div *ngFor="let _ of [1, 2, 3, 4, 5, 6];let last=last">
