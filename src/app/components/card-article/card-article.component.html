@@ -1,10 +1,11 @@
-<div [ngClass]="currentTheme" class="card w-full flex flex-col rounded-md  border  "
+<div [ngClass]="currentTheme"
+    class="card w-full flex flex-col rounded-md  border hover:shadow transition-all duration-300 "
     routerLink="/articles/{{article.slug}}">
     <div class="cursor-default w-full h-56 rounded-t-md overflow-hidden relative group ">
         <img class="  absolute top-0 left-0 w-full h-full  object-fill group-hover:scale-105 transition-all duration-300 "
             [src]="article.image.url" alt="">
     </div>
-    <div class="card-body cursor-pointer flex flex-col gap-5 px-4 py-6  shadow  rounded-b-md  ">
+    <div class="card-body cursor-pointer flex flex-col gap-5 px-4 py-6    rounded-b-md  ">
         <div class="flex flex-col gap-2">
             <div class="flex justify-between items-center">
                 <span

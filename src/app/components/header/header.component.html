@@ -19,7 +19,7 @@
             </span>
         </button>
     </div>
-    <ul [@menuAnimation]="menuMobile ? 'visible' : 'hidden'"
+    <ul [ngClass]="currentTheme" [@menuAnimation]="menuMobile ? 'visible' : 'hidden'"
         class="menumobile !sm:hidden  rounded-md p-3 border   z-10 flex  flex-col  absolute s top-16 left-0 right-0 gap-0  ">
         <li *ngFor="let nav of navItems; let last = last" class=" flex">
             <a (click)="toggleMenuMobile()" [routerLink]="nav.path" routerLinkActive="active"

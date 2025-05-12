@@ -67,7 +67,15 @@
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+
 }
+
+.main-content {
+    border-left: 1px solid var(--hr-bg);
+    border-right: 1px solid var(--hr-bg);
+}
+
+
 
 .bottomBorderLined {
     position: relative;
@@ -121,8 +129,26 @@ hr {
         border-radius: 8px;
     }
 
+    // table {
+    //     margin-top: 12px;
+    //     width: 100%;
+    //     min-width: max-content;
+    //     overflow-x: auto;
+    // }
     table {
-        margin-top: 12px;
+        display: block;
+        overflow-x: auto;
+        // white-space: nowrap;
+        /* Forcer les cellules à ne pas se diviser */
+        // width: 100%;
+        max-width: max-content;
+        /* S'adapte au parent */
+        scrollbar-width: none;
+    }
+
+    table::-webkit-scrollbar {
+        display: none;
+        /* Cacher la barre pour Chrome, Safari, Edge */
     }
 
     th {

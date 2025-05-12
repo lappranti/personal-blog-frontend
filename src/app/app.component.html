@@ -1,11 +1,11 @@
 <div class="wrapper flex flex-col min-h-screen relative">
-    <div class="app-container px-6 sm:px-10 pt-4 grow  flex flex-col">
+    <div class="app-container px-4 sm:px-10 pt-4 grow  flex flex-col">
         <div class="main-container grow flex flex-col  ">
             <div class="sticky top-0 left-0 w-full z-10">
                 <app-header></app-header>
             </div>
-            <div [ngClass]="currentTheme==='light'?'border-[#EFEDEB]':'border-[#34302D]'"
-                class="main-content md:pt-12 pt-8   transition-all duration-300   grow border-l border-r  mx-2 flex flex-col  px-4">
+            <div
+                class="main-content md:pt-12 pt-8   transition-all duration-300 mx-2 px-2 sm:px-4   grow   flex flex-col  ">
                 <div class="grow">
                     <router-outlet />
                 </div>

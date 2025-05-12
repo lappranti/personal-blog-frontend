@@ -37,6 +37,30 @@
         &.visible {
             display: block;
         }
+
+        &.light {
+            background-color: #FEFEFE;
+            border-color: #EFEDEB;
+            color: #4A4846;
+
+            .active {
+                color: #34302D;
+            }
+
+
+        }
+
+        &.dark {
+            background-color: #201E1D;
+            border-color: #34302D;
+            color: #C0BFBF;
+
+            .active {
+                color: #FEFEFE;
+            }
+
+
+        }
     }
 }
 
