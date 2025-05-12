@@ -14,9 +14,11 @@
         </button>
         <button (click)="toggleTheme()"
             class="btn-toggle-theme h-10 w-10 rounded-lg  border    flex items-center justify-center">
-            <span class="material-symbols-rounded">
+            <!-- <span class="material-symbols-rounded">
                 {{currentTheme==='light'?'dark_mode':'light_mode'}}
-            </span>
+            </span> -->
+            <mat-icon>{{currentTheme==='light'?'dark_mode':'light_mode'}}</mat-icon>
+
         </button>
     </div>
     <ul [ngClass]="currentTheme" [@menuAnimation]="menuMobile ? 'visible' : 'hidden'"
