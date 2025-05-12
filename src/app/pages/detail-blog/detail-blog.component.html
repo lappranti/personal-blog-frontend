@@ -1,21 +1,21 @@
 <div class=" min-h-screen">
     <div class="flex flex-col " *ngIf="article">
         <div class="flex flex-col gap-3">
-            <h1 class=" text-4xl font-semibold text-[#34302D] leading-[1.3] tracking-[-0.1px]">{{article.title}}
+            <h1 class=" text-4xl font-semibold  leading-[1.3] tracking-[-0.1px]">{{article.title}}
             </h1>
             <div class="w-full h-[60vh] relative my-2 rounded-md overflow-hidden ">
-                <img class="absolute top-0 left-0 w-full h-full object-fill" [src]="article.imageUrl" alt="">
+                <img class="absolute top-0 left-0 w-full h-full object-fill" [src]="article.image.url" alt="">
             </div>
-            <span class=" text-[#4A4846] italic  leading-[1.3] tracking-[-0.2px]">{{article.createdAt | date: 'MMMM d,
+            <span class="  italic  leading-[1.3] tracking-[-0.2px]">{{article.createdAt | date: 'MMMM d,
                 y'}}
             </span>
-            <p class="text-[#4A4846] text-lg  leading-[1.5] tracking-[-0.2px] text-on-2-line">{{article.description}}
+            <p class=" text-lg  leading-[1.5] tracking-[-0.2px] text-on-2-line">{{article.description}}
             </p>
         </div>
-        <div class="divider w-full  my-8 h-[1px] bg-[#EFEDEB]  "></div>
+        <hr>
         <div class="article-content" [innerHtml]="article.content">
         </div>
-        <p class=" text-[#4A4846] text-lg font-bold  leading-[1.5] tracking-[-0.2px] mt-3 flex items-center  gap-1">
+        <p class="  text-lg font-bold  leading-[1.5] tracking-[-0.2px] mt-3 flex items-center  gap-1">
             <span>—</span>{{article.addBy}}
         </p>
     </div>

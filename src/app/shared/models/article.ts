@@ -6,7 +6,10 @@ export interface Article {
   content: string;
   addBy: string;
   categorie: string;
-  imageUrl: string;
+  image: {
+    url: string;
+    publicId: string;
+  };
   createdAt: Date;
   updatedAt: Date;
 }

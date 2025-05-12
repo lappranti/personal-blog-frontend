@@ -32,7 +32,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/prismjs/themes/prism.css"
+              "node_modules/prismjs/themes/prism-okaidia.min.css"
             ],
             "scripts": []
           },

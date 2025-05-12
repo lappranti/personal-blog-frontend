@@ -4,11 +4,10 @@ import { ApiService } from '../../shared/services/api/api.service';
 import { Article } from '../../shared/models/article';
 import { CommonModule } from '@angular/common';
 import { marked } from 'marked';
-// import * as Prism from 'prismjs';
 import Prism from 'prismjs';
-import 'prismjs/components/prism-dart';
-import 'prismjs/components/prism-javascript';
-import 'prismjs/components/prism-css';
+// import 'prismjs/components/prism-dart';
+// import 'prismjs/components/prism-javascript';
+// import 'prismjs/components/prism-css';
 // import 'prismjs/components/prism-html';
 
 @Component({
@@ -27,7 +26,6 @@ export class DetailBlogComponent implements AfterViewInit {
   ) {
     activatedRoute.params.subscribe((route) => {
       this.slug = route['slug'];
-      // //console.log(this.slug);
       if (this.slug) {
         this.getArticle();
       }
@@ -42,13 +40,15 @@ export class DetailBlogComponent implements AfterViewInit {
         marked.parse(this.article.content)
       );
       this.article.content = parsedMarkdown;
-      Prism.highlightAll();
-      // //console.log(this.article);
+      // Prism.highlightAll();
+
+      setTimeout(() => {
+        Prism.highlightAll();
+      }, 0);
     });
   }
 
   ngAfterViewInit() {
-    //console.log(Prism);
-    Prism.highlightAll(); // Applique la coloration syntaxique
+    // Prism.highlightAll(); // Applique la coloration syntaxique
   }
 }

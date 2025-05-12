@@ -103,15 +103,36 @@
     }
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--hr-bg);
+    margin: 24px 0;
+
+}
+
 .article-content {
 
+    table,
+    th,
+    td {
+        border: 1px solid var(--hr-bg);
+        border-collapse: collapse;
+        border-radius: 8px;
+    }
 
+    table {
+        margin-top: 12px;
+    }
 
-    hr {
-        border: none;
-        height: 1px;
-        background-color: #EFEDEB;
-        margin: 24px 0;
+    th {
+        padding: 6px 8px;
+        color: var(--heading-color);
+    }
+
+    td {
+        padding: 6px 12px;
+        color: var(--regular-text-color)
     }
 
     p,
@@ -119,7 +140,7 @@
         @include px-to-rem(18);
         line-height: 140%;
         letter-spacing: -.2px;
-        margin-top: 12px;
+        // margin-top: 12px;
     }
 
     a {
@@ -176,7 +197,7 @@
     em {
         @include px-to-rem(18);
         font-style: italic;
-        color: #4A4846;
+        color: var(--regular-text-color);
         line-height: 140%;
         letter-spacing: -.2px;
     }
@@ -186,12 +207,12 @@
     blockquote {
         font-size: 1.25rem;
         font-style: italic;
-        color: #4A4846;
         border-left: 4px solid #93CEFC;
         padding: 12px;
         margin-top: 12px;
-        background-color: #FBF9F7;
+        background-color: var(--code-block-bg);
         border-radius: 4px;
+        transition: all .3s;
 
         p {
             margin-top: 0;
@@ -199,42 +220,23 @@
     }
 
     pre {
-        background-color: #F5F5F5;
-        /* Couleur de fond douce */
-        color: #2D2D2D;
-        /* Couleur du texte */
-        padding: 16px;
-        /* Espacement interne */
-        border-radius: 8px;
-        /* Coins arrondis */
+        font-size: 1rem;
+        line-height: 140%;
+        letter-spacing: -.4px;
+        padding: 12px;
+        border-radius: 12px;
         overflow-x: auto;
-        /* Ajoute un défilement horizontal si nécessaire */
-        font-family: 'Courier New', Courier, monospace;
-        /* Police monospace */
-        font-size: 0.95rem;
-        /* Taille de police légèrement réduite */
-        line-height: 1.5;
-        /* Hauteur de ligne pour une meilleure lisibilité */
-        border: 1px solid #E0E0E0;
-        /* Bordure légère */
-        margin: 16px 0;
-        /* Espacement vertical */
     }
 
     /* Styles pour le texte inline dans les blocs de code */
     code {
-        background-color: #F5F5F5;
+        background-color: var(--code-block-bg);
         /* Même couleur de fond que <pre> */
         color: #D6336C;
         /* Couleur pour le texte inline */
         padding: 2px 4px;
         /* Espacement interne */
         border-radius: 4px;
-        /* Coins arrondis */
-        font-family: 'Courier New', Courier, monospace;
-        /* Police monospace */
-        font-size: 0.9rem;
-        /* Taille de police légèrement réduite */
     }
 
 
@@ -289,7 +291,7 @@ strong {
     @include px-to-rem(18);
     line-height: 140%;
     letter-spacing: -.2px;
-    color: #4A4846;
+    color: var(--regular-text-color);
     font-weight: 700;
     letter-spacing: -.2px;
     margin-top: 12px;
@@ -305,7 +307,9 @@ p,
 ul,
 li,
 ol,
-a {
+a,
+label,
+span {
     color: var(--regular-text-color);
 }
 
@@ -315,8 +319,8 @@ input {
     height: 52px;
     width: 100%;
     border-radius: 10px;
-    background-color: #FEFEFE;
-    border: 1px solid #DEDCDA;
+    background-color: var(--background-input);
+    border: 1px solid var(--border-input);
     padding: 0 16px;
     max-width: 400px;
 }
@@ -324,7 +328,7 @@ input {
 input,
 input::placeholder {
     font-size: 1.125rem;
-    color: #4A4846;
+    color: var(--regular-text-color);
     line-height: 150%;
     letter-spacing: -.2px;
 }
@@ -333,7 +337,10 @@ input:focus {
     outline: 1px solid #93CEFC;
 }
 
-
+.categori-badge {
+    background-color: var(--cat-bg);
+    color: var(--cat-color);
+}
 
 
 *,
@@ -352,15 +359,27 @@ body {
 /* styles.css */
 
 :root {
-    .light {
-        --heading-color: #34302D;
-        --regular-text-color: #4A4846;
-        --background-color: #FBF9F7;
-    }
+    --heading-color: #34302D;
+    --regular-text-color: #4A4846;
+    --background-color: #FBF9F7;
+    --background-input: #EFEDEB;
+    --code-block-bg: #EFEDEB;
+    --code-block-border: #EFEDEB;
+    --border-input: #DEDCDA;
+    --hr-bg: #EFEDEB;
+    --cat-color: #93CEFC;
+    --cat-bg: #93CEFC30
 }
 
 .dark {
     --background-color: #1C1A19;
     --heading-color: #FEFEFE;
-    --regular-text-color: #C0BFBF
+    --regular-text-color: #C0BFBF;
+    --background-input: #201E1D;
+    --border-input: #4A4846;
+    --code-block-bg: #201E1D;
+    --code-block-border: #34302D;
+    --hr-bg: #34302D;
+    // --cat-color: #34302D;
+    // --cat-bg: #34302D30
 }
