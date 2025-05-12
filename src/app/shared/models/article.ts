@@ -12,4 +12,5 @@ export interface Article {
   };
   createdAt: Date;
   updatedAt: Date;
+  views: number;
 }
