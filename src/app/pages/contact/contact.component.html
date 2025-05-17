@@ -1,0 +1,65 @@
+<div class="px-4 sm:px-10 mt-20 mb-32">
+    <div class="container flex flex-col gap-24">
+        <div class="flex items-center gap-16">
+            <div class="max-w-md h-[448px] w-full relative rounded-md overflow-hidden">
+                <img class="absolute top-0 left-0 w-full h-full object-fill z-10" src="./images/img-profil.jpg" alt="">
+            </div>
+            <div class="flex-1 flex flex-col gap-10">
+                <app-title [texte]="'ABOUT'"></app-title>
+                <div class="relative max-w-max">
+                    <img class="absolute top-0 left-0" src="./images/code-top.png" alt="">
+                    <div class="relative z-10">
+                        <h2 class="text-gray-900 text-4xl font-semibold">Développeur FullStack passionné</h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Passionné par le développement web depuis plus de 3 ans, je crée des applications modernes et performantes.
+                            Spécialisé dans les technologies Angular et Node.js, je m'adapte aux besoins de mes clients pour livrer des
+                            solutions innovantes et personnalisées.
+                        </p>
+                        <p class="text-gray-600 text-lg leading-relaxed mt-4">
+                            Mon approche : la qualité avant tout, avec un focus sur l'expérience utilisateur et les meilleures pratiques
+                            du développement. Je suis toujours à la recherche de nouvelles technologies et je partage régulièrement mes
+                            découvertes sur mon blog.
+                        </p>
+                    </div>
+                    <img class="absolute bottom-0 right-0" src="./images/code-bot.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-10">
+            <div class="grid grid-cols-2 gap-10">
+                <div class="flex flex-col gap-3">
+                    <app-title [texte]="'CONTACT'"></app-title>
+                    <h2>Restons connectés</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        N'hésitez pas à me contacter pour discuter de vos projets ou pour échanger sur le développement web. Je suis
+                        toujours ravi de partager mon expérience et de collaborer avec des passionnés comme vous.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-10">
+                <div class="grid grid-cols-2 gap-8">
+                    <div *ngFor="let cont of contacts" class="flex flex-col gap-3">
+                        <div class="w-12 h-12 rounded-full bg-primary-500 flex items-center justify-center">
+                            <img [src]="cont.icon" alt="">
+                        </div>
+                        <h2 *ngIf="cont.label">{{cont.label}}</h2>
+                        <p *ngIf="cont.value">{{cont.value}}</p>
+                        <app-social-links *ngIf="!cont.value"></app-social-links>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-md p-6 flex flex-col gap-6">
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="email" class="text-gray-800 text-base font-medium">Email</label>
+                        <input id="email" type="text" class="bg-white border-gray-200 w-full max-w-none">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="message" class="text-gray-800 text-base font-medium">Message</label>
+                        <textarea placeholder="Your message..." id="message" name="" id="" rows="5"
+                            class="bg-white border px-4 py-3 border-gray-200 w-full outline-none"></textarea>
+                    </div>
+                    <button class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

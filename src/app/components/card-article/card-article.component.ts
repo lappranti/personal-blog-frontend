@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ThemeService } from '../../shared/services/theme/theme.service';
 import { MatIconModule } from '@angular/material/icon';
+import { TitleComponent } from '../title/title.component';
 
 @Component({
   selector: 'app-card-article',
   standalone: true,
-  imports: [CommonModule, RouterModule, MatIconModule],
+  imports: [CommonModule, RouterModule, MatIconModule, TitleComponent],
   templateUrl: './card-article.component.html',
   styleUrl: './card-article.component.scss',
 })

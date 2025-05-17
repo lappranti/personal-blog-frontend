@@ -1,0 +1,30 @@
+<div class="project-detail" *ngIf="project">
+  <div class="project-header">
+    <h1>{{ project.title }}</h1>
+    <div class="project-tags">
+      <span *ngFor="let tag of project.tags" class="tag">{{ tag }}</span>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <div class="project-media">
+      <div class="video-container" *ngIf="project.demoVideo">
+        <iframe [src]="project.demoVideo" allowfullscreen></iframe>
+      </div>
+      <div class="description">
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+
+    <div class="code-section" *ngIf="project.codeSnippets?.length">
+      <h2>Extraits de code</h2>
+      <div class="code-snippet" *ngFor="let snippet of project.codeSnippets">
+        <div class="snippet-header">
+          <h3>{{ snippet.explanation }}</h3>
+          <button (click)="copyCode(snippet.code)">Copier</button>
+        </div>
+        <pre><code [class]="snippet.language">{{ snippet.code }}</code></pre>
+      </div>
+    </div>
+  </div>
+</div>

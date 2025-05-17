@@ -1,0 +1,30 @@
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scaleY(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.bar {
+  background: linear-gradient(135deg, #4F46E5, #818CF8);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.bar:hover {
+  transform: scaleY(1.2);
+}
+
+/* Effet de flou pour améliorer la perception de la vitesse */
+:host {
+  filter: blur(0.5px);
+  transition: filter 0.3s ease;
+}
+
+:host:not([loading]) {
+  filter: blur(0);
+}

@@ -1,0 +1,27 @@
+<div class=" px-4 sm:px-10 bg-gray-900 py-28 relative">
+    <img class="absolute left-0 top-0 " src="./images/deco-newsletter-1.png" alt="">
+    <img class="absolute right-0 top-0" src="./images/deco-newsletter-2.png" alt="">
+
+    <div class="container flex flex-col gap-6">
+        <div class="flex flex-col items-center gap-3">
+            <app-title [texte]="'NEWSLETTER'" [bgColor]="'bg-primary-500'"></app-title>
+            <h3 class="text-white font-bold text-center  text-4xl">Sign up for our newsletter</h3>
+            <p class="text-gray-400 text-xl text-center">Stay in the loop with everything you need to know.</p>
+        </div>
+        <div class="flex flex-col  max-w-max mx-auto ">
+            <form [formGroup]="form" class="flex items-center gap-4">
+                <input formControlName="email" type="text" placeholder="Enter your email">
+                <button type="submit" (click)="!isLoading?onSubmit():''" class="btn btn-primary">
+                    <span *ngIf="!isLoading">Subscribe</span>
+                    <mat-icon *ngIf="isLoading" class=" rotating">sync</mat-icon>
+                </button>
+            </form>
+            <span *ngIf="message.length" [ngClass]="formValid?'text-green-500':'text-red-500'"
+                class=" text-xs flex mt-2 items-center gap-2"><mat-icon class="flex-none">info</mat-icon>
+                {{message}}</span>
+        </div>
+    </div>
+    <img class="absolute bottom-0 left-0" src="./images/deco-newsletter-3.png" alt="">
+    <img class="absolute bottom-0 right-0" src="./images/deco-newsletter-4.png" alt="">
+
+</div>

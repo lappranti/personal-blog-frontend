@@ -1,0 +1,14 @@
+<div class="project-grid">
+  <div class="project-card" *ngFor="let project of projects" (click)="onProjectClick(project)">
+    <div class="project-image">
+      <img [src]="project.thumbnail" [alt]="project.title" />
+    </div>
+    <div class="project-info">
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.shortDescription }}</p>
+      <div class="project-tags">
+        <span *ngFor="let tag of project.tags" class="tag">{{ tag }}</span>
+      </div>
+    </div>
+  </div>
+</div>

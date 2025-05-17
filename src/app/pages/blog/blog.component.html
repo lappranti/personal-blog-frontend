@@ -1,24 +1,59 @@
-<div class="flex flex-col gap-7 h-full">
-    <div class=" flex-col gap-[6px]">
-        <h2 class="title-tiret text-3xl  leading-[1.3] tracking-[-0.5px] font-extrabold  ">Mes Articles</h2>
-        <p class=" text-lg  leading-[1.5] tracking-[-0.2px]  ">Voici tous mes articles récents.
-            Cliquez sur
-            un titre pour lire l'article complet.</p>
-    </div>
-    <div class="divider w-full my-8 md:my-12 h-[1px]   "
-        [ngClass]="currentTheme==='light'?'bg-[#EFEDEB]':'bg-[#34302D]'"></div>
-    <!-- Skeleton Loader -->
-    <div *ngIf="isLoading" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3   gap-6  sm:gap-7 ">
-        <div *ngFor="let _ of [1, 2, 3, 4, 5, 6];let last=last">
-            <app-skeleton-loader></app-skeleton-loader>
+<div class="px-4 sm:px-10  mb-40 mt-20">
+    <div class="container flex flex-col gap-24">
+        <app-numbers></app-numbers>
+        <!--  -->
+        <div class="flex flex-col gap-10 h-full">
+            <div class="flex flex-col gap-3 items-center">
+                <app-title [texte]="'ARTICLES'"></app-title>
+                <p class="text-gray-500 text-xl   ">Tous les articles</p>
+            </div>
+            <!-- Barre de recherche et filtres -->
+            <div class="flex flex-col sm:flex-row sm:justify-between gap-4 w-full   ">
+                <!-- Barre de recherche -->
+                <div class="flex-1">
+                    <input type="text" [(ngModel)]="searchQuery" (input)="onSearchChange()"
+                        class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
+                        placeholder="Rechercher des articles...">
+                </div>
+                <!-- Filtre par catégorie -->
+                <div class="flex flex-wrap gap-2">
+                    <button (click)="onCategorySelect(null)"
+                        [class]="{'bg-blue-500 text-white': !selectedCategory, 'bg-gray-200': selectedCategory}"
+                        class="px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">
+                        Toutes
+                    </button>
+                    <!-- Ajoutez ici les boutons de catégorie selon vos besoins -->
+                    <button (click)="onCategorySelect('Web')"
+                        [class]="{'bg-blue-500 text-white': selectedCategory === 'Web', 'bg-gray-200': selectedCategory !== 'Web'}"
+                        class="px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">
+                        Web
+                    </button>
+                    <button (click)="onCategorySelect('Mobile')"
+                        [class]="{'bg-blue-500 text-white': selectedCategory === 'Mobile', 'bg-gray-200': selectedCategory !== 'Mobile'}"
+                        class="px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">
+                        Mobile
+                    </button>
+                    <button (click)="onCategorySelect('UI/UX')"
+                        [class]="{'bg-blue-500 text-white': selectedCategory === 'UI/UX', 'bg-gray-200': selectedCategory !== 'UI/UX'}"
+                        class="px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">
+                        UI/UX
+                    </button>
+                </div>
+            </div>
+            <!-- Composant de chargement -->
+            <div *ngIf="isLoading" class="flex-1 flex items-center justify-center">
+                <app-loading-spinner></app-loading-spinner>
+            </div>
+            <!-- Liste des articles -->
+            <div class=" flex flex-col gap-7">
+                <div *ngIf="!isLoading" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3   gap-6  sm:gap-7   ">
+                    <app-card-article *ngFor="let article of articles" [article]="article"></app-card-article>
+                </div>
+                <app-pagination *ngIf="totalPages>1" [currentPage]="currentPage" [totalPages]="totalPages"
+                    (pageChange)="onPageChange($event)"></app-pagination>
+            </div>
         </div>
-    </div>
-    <!-- Liste des articles -->
-    <div class="flex flex-col gap-7">
-        <div *ngIf="!isLoading" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3   gap-6  sm:gap-7   ">
-            <app-card-article *ngFor="let article of articles" [article]="article"></app-card-article>
-        </div>
-        <app-pagination *ngIf="totalPages>1" [currentPage]="currentPage" [totalPages]="totalPages"
-            (pageChange)="onPageChange($event)"></app-pagination>
+        <!--  -->
+        <app-technos></app-technos>
     </div>
 </div>

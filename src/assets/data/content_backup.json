@@ -1,0 +1,260 @@
+{
+  "articles": [
+    {
+      "title": "Lire pour s'inspirer : 5 livres qui ont marqué mon parcours de développement",
+      "slug": "5-livres-qui-ont-marque-mon-parcours-de-developpement",
+      "description": "Quelques-uns de mes livres préférés, qu'ils soient de fiction ou de non-fiction, qui me motivent toujours autant.",
+      "content": "Autant j'adore passer du temps sur un éditeur de code, autant j'ai parfois besoin de faire une pause et de quitter les écrans. C'est là que les livres entrent en jeu. Ces dernières années, j'ai découvert que lire les bons livres – qu'ils parlent de programmation, de créativité ou même de fantasy – m'apporte de nouvelles perspectives et une motivation renouvelée. Voici cinq ouvrages qui ont profondément *marqué mon parcours* jusqu'à présent.",
+      "categorie": "Développement",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1502604487602-08c6228a48aa",
+        "publicId": "books"
+      }
+    },
+    {
+      "title": "Créer une interface utilisateur réactive avec Tailwind CSS",
+      "slug": "interface-reactive-tailwind-css",
+      "description": "Découvrez comment utiliser Tailwind CSS pour créer des interfaces utilisateur fluides et réactives.",
+      "content": "Tailwind CSS est un framework CSS utilitaire qui permet de créer des interfaces utilisateur modernes sans avoir à écrire de CSS personnalisé. Dans cet article, nous allons explorer comment utiliser Tailwind pour créer une interface utilisateur réactive et adaptative.",
+      "categorie": "UI/UX",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+        "publicId": "ui-tailwind"
+      }
+    },
+    {
+      "title": "Optimiser les performances de votre application Angular",
+      "slug": "optimiser-performances-angular",
+      "description": "Découvrez les meilleures pratiques pour optimiser les performances de votre application Angular.",
+      "content": "Angular est un framework puissant, mais il est important de suivre certaines meilleures pratiques pour maintenir de bonnes performances. Dans cet article, nous explorerons les techniques pour optimiser votre application Angular.",
+      "categorie": "Développement",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131",
+        "publicId": "angular-performance"
+      }
+    },
+    {
+      "title": "Introduction à la programmation fonctionnelle avec JavaScript",
+      "slug": "programmation-fonctionnelle-javascript",
+      "description": "Découvrez les concepts clés de la programmation fonctionnelle et comment les appliquer en JavaScript.",
+      "content": "La programmation fonctionnelle est un paradigme de programmation qui met l'accent sur l'utilisation de fonctions pures et l'évitement des effets de bord. Dans cet article, nous explorerons les concepts fondamentaux de la programmation fonctionnelle et comment les mettre en pratique avec JavaScript.",
+      "categorie": "Développement",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1498075392652-59fe004397b5",
+        "publicId": "functional-js"
+      }
+    },
+    {
+      "title": "Créer un portfolio interactif avec Three.js",
+      "slug": "portfolio-3d-threejs",
+      "description": "Découvrez comment ajouter des effets 3D à votre portfolio avec Three.js.",
+      "content": "Three.js est une bibliothèque JavaScript qui permet de créer des graphiques 3D dans le navigateur. Dans cet article, nous allons explorer comment créer un portfolio interactif avec des effets 3D impressionnants.",
+      "categorie": "UI/UX",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1510096520728-72a4608a6641",
+        "publicId": "threejs-portfolio"
+      }
+    },
+    {
+      "title": "Introduction à la cybersécurité pour les développeurs",
+      "slug": "cybersecurite-developpeurs",
+      "description": "Les bases de la cybersécurité que tout développeur doit connaître.",
+      "content": "La cybersécurité est un sujet crucial pour tous les développeurs. Dans cet article, nous explorerons les concepts fondamentaux de la cybersécurité et comment les appliquer dans votre développement.",
+      "categorie": "Sécurité",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
+        "publicId": "cybersecurity"
+      }
+    },
+    {
+      "title": "Lire pour s'inspirer : 5 livres qui ont marqué mon parcours de développement",
+      "slug": "5-livres-qui-ont-marque-mon-parcours-de-developpement",
+      "description": "Quelques-uns de mes livres préférés, qu'ils soient de fiction ou de non-fiction, qui me motivent toujours autant.",
+      "content": "Autant j'adore passer du temps sur un éditeur de code, autant j'ai parfois besoin de faire une pause et de quitter les écrans. C'est là que les livres entrent en jeu. Ces dernières années, j'ai découvert que lire les bons livres – qu'ils parlent de programmation, de créativité ou même de fantasy – m'apporte de nouvelles perspectives et une motivation renouvelée. Voici cinq ouvrages qui ont profondément *marqué mon parcours* jusqu'à présent.",
+      "categorie": "Développement",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1502604487602-08c6228a48aa",
+        "publicId": "books"
+      }
+    },
+    {
+      "title": "Créer une interface utilisateur réactive avec Tailwind CSS",
+      "slug": "interface-reactive-tailwind-css",
+      "description": "Découvrez comment utiliser Tailwind CSS pour créer des interfaces utilisateur fluides et réactives.",
+      "content": "Tailwind CSS est un framework CSS utilitaire qui permet de créer des interfaces utilisateur modernes sans avoir à écrire de CSS personnalisé. Dans cet article, nous allons explorer comment utiliser Tailwind pour créer une interface utilisateur réactive et adaptative.",
+      "categorie": "UI/UX",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+        "publicId": "ui-tailwind"
+      }
+    },
+    {
+      "title": "Optimiser les performances de votre application Angular",
+      "slug": "optimiser-performances-angular",
+      "description": "Découvrez les meilleures pratiques pour optimiser les performances de votre application Angular.",
+      "content": "Angular est un framework puissant, mais il est important de suivre certaines meilleures pratiques pour maintenir de bonnes performances. Dans cet article, nous explorerons les techniques pour optimiser votre application Angular.",
+      "categorie": "Développement",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131",
+        "publicId": "angular-performance"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "Calculatrice en ligne",
+      "description": "Une calculatrice simple et élégante avec des opérations de base.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "demo": "https://calculatrice-demo.com",
+      "github": "https://github.com/username/calculatrice",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1542831370-57e408c56356",
+        "publicId": "calculatrice"
+      }
+    },
+    {
+      "title": "Portfolio interactif",
+      "description": "Un portfolio moderne avec animations et effets de parallaxe.",
+      "technologies": ["Angular", "Tailwind CSS", "TypeScript"],
+      "demo": "https://portfolio-demo.com",
+      "github": "https://github.com/username/portfolio",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1542744095-6f1635958006",
+        "publicId": "portfolio"
+      }
+    },
+    {
+      "title": "Application de tâches",
+      "description": "Une application de gestion de tâches avec synchronisation en temps réel.",
+      "technologies": ["Angular", "Firebase", "Angular Material"],
+      "demo": "https://todo-app-demo.com",
+      "github": "https://github.com/username/todo-app",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+        "publicId": "todo-app"
+      }
+    },
+    {
+      "title": "Quiz interactif",
+      "description": "Un quiz avec système de points et interface utilisateur moderne.",
+      "technologies": ["React", "Tailwind CSS", "Firebase"],
+      "demo": "https://quiz-demo.com",
+      "github": "https://github.com/username/quiz",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+        "publicId": "quiz-app"
+      }
+    },
+    {
+      "title": "Galerie d'images responsive",
+      "description": "Une galerie d'images avec effet Lightbox et filtrage.",
+      "technologies": ["Vanilla JS", "CSS Grid", "HTML5"],
+      "demo": "https://gallery-demo.com",
+      "github": "https://github.com/username/gallery",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1502604487602-08c6228a48aa",
+        "publicId": "image-gallery"
+      }
+    },
+    {
+      "title": "Application météo",
+      "description": "Une application météo avec API OpenWeather et interface moderne.",
+      "technologies": ["Vue.js", "Axios", "Tailwind CSS"],
+      "demo": "https://weather-demo.com",
+      "github": "https://github.com/username/weather-app",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1502604487602-08c6228a48aa",
+        "publicId": "weather-app"
+      }
+    }
+    {
+      "title": "Calculatrice en ligne",
+      "description": "Une calculatrice simple et élégante avec des opérations de base.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "demo": "https://calculatrice-demo.com",
+      "github": "https://github.com/username/calculatrice",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1542831370-57e408c56356",
+        "publicId": "calculatrice"
+      }
+    },
+    {
+      "title": "Portfolio interactif",
+      "description": "Un portfolio moderne avec animations et effets de parallaxe.",
+      "technologies": ["Angular", "Tailwind CSS", "TypeScript"],
+      "demo": "https://portfolio-demo.com",
+      "github": "https://github.com/username/portfolio",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1542744095-6f1635958006",
+        "publicId": "portfolio"
+      }
+    },
+    {
+      "title": "Application de tâches",
+      "description": "Une application de gestion de tâches avec synchronisation en temps réel.",
+      "technologies": ["Angular", "Firebase", "Angular Material"],
+      "demo": "https://todo-app-demo.com",
+      "github": "https://github.com/username/todo-app",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+        "publicId": "todo-app"
+      }
+    }
+  ],
+  "tricks": [
+    {
+      "title": "Sélectionner les éléments en cascade avec CSS",
+      "description": "Utilisez l'opérateur ":has()" pour sélectionner des éléments qui contiennent des éléments spécifiques.",
+      "code": ".parent:has(.child) {\n  background-color: yellow;\n}",
+      "categorie": "CSS"
+    },
+    {
+      "title": "Gestion des erreurs en TypeScript",
+      "description": "Utilisez des classes personnalisées pour gérer les erreurs de manière plus précise.",
+      "code": "class ValidationError extends Error {\n  constructor(message: string) {\n    super(message);\n    this.name = 'ValidationError';\n  }\n}",
+      "categorie": "TypeScript"
+    },
+    {
+      "title": "Optimisation des requêtes HTTP",
+      "description": "Utilisez les headers HTTP pour optimiser les performances de vos requêtes.",
+      "code": "fetch(url, {\n  headers: {\n    'Cache-Control': 'max-age=3600',\n    'Accept-Encoding': 'gzip'\n  }\n})",
+      "categorie": "HTTP"
+    },
+    {
+      "title": "Optimisation des images",
+      "description": "Utilisez les formats modernes et les attributs appropriés pour améliorer les performances.",
+      "code": "<img src=\"image.webp\" alt=\"Description\" loading=\"lazy\" decoding=\"async\">",
+      "categorie": "Performance"
+    },
+    {
+      "title": "Gestion des états avec Redux",
+      "description": "Une approche simple pour gérer les états globaux dans vos applications.",
+      "code": "const initialState = { count: 0 };\nconst reducer = (state = initialState, action) => {\n  switch (action.type) {\n    case 'INCREMENT':\n      return { count: state.count + 1 };\n    default:\n      return state;\n  }\n};",
+      "categorie": "React"
+    },
+    {
+      "title": "Navigation Angular",
+      "description": "Une méthode efficace pour gérer la navigation dans vos applications Angular.",
+      "code": "this.router.navigate(['/path'], {\n  queryParams: { id: 1 },\n  relativeTo: this.route\n});",
+      "categorie": "Angular"
+    },
+    {
+      "title": "Animations CSS",
+      "description": "Créez des animations fluides avec les propriétés transform et transition.",
+      "code": ".element {\n  transition: transform 0.3s ease;\n  &:hover {\n    transform: scale(1.1);\n  }\n}",
+      "categorie": "CSS"
+    },
+    {
+      "title": "Gestion des événements",
+      "description": "Une approche moderne pour gérer les événements dans vos applications JavaScript.",
+      "code": "document.addEventListener('DOMContentLoaded', () => {\n  const button = document.querySelector('button');\n  button.addEventListener('click', handleClick);\n});",
+      "categorie": "JavaScript"
+    },
+    {
+      "title": "Utilisation de la bibliothèque Lodash pour améliorer vos applications",
+      "description": "Découvrez comment utiliser la bibliothèque Lodash pour améliorer vos applications JavaScript.",
+      "code": "const _ = require('lodash');\nconst array = [1, 2, 3, 4, 5];\nconst result = _.filter(array, (item) => item > 3);\nconsole.log(result);",
+      "categorie": "JavaScript"
+    }
+  ]
+}

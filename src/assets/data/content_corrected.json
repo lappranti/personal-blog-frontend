@@ -1,0 +1,110 @@
+{
+  "articles": [
+    {
+      "title": "Lire pour s'inspirer : 5 livres qui ont marqu\u00e9 mon parcours de d\u00e9veloppement",
+      "slug": "5-livres-qui-ont-marque-mon-parcours-de-developpement",
+      "description": "Quelques-uns de mes livres pr\u00e9f\u00e9r\u00e9s, qu'ils soient de fiction ou de non-fiction, qui me motivent toujours autant.",
+      "content": "Autant j'adore passer du temps sur un \u00e9diteur de code, autant j'ai parfois besoin de faire une pause et de quitter les écrans. C'est l\u00e0 que les livres entrent en jeu. Ces derni\u00e8res ann\u00e9es, j'ai d\u00e9couvert que lire les bons livres \u00e0 m'apporte de nouvelles perspectives et une motivation renouvel\u00e9e. Voici cinq ouvrages qui ont profond\u00e9ment *marqu\u00e9 mon parcours* jusqu'\u00e0 pr\u00e9sent.",
+      "categorie": "D\u00e9veloppement",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1502604487602-08c6228a48aa",
+        "publicId": "books"
+      }
+    },
+    {
+      "title": "Cr\u00e9er une interface utilisateur r\u00e9active avec Tailwind CSS",
+      "slug": "interface-reactive-tailwind-css",
+      "description": "D\u00e9couvrez comment utiliser Tailwind CSS pour cr\u00e9er des interfaces utilisateur fluides et r\u00e9actives.",
+      "content": "Tailwind CSS est un framework CSS utilitaire qui permet de cr\u00e9er des interfaces utilisateur modernes sans avoir \u00e0 \u00e9crire de CSS personnalis\u00e9. Dans cet article, nous allons explorer comment utiliser Tailwind pour cr\u00e9er une interface utilisateur r\u00e9active et adaptative.",
+      "categorie": "UI/UX",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+        "publicId": "ui-tailwind"
+      }
+    },
+    {
+      "title": "Optimiser les performances de votre application Angular",
+      "slug": "optimiser-performances-angular",
+      "description": "D\u00e9couvrez les meilleures pratiques pour optimiser les performances de votre application Angular.",
+      "content": "Angular est un framework puissant, mais il est important de suivre certaines meilleures pratiques pour maintenir de bonnes performances. Dans cet article, nous explorerons les techniques pour optimiser votre application Angular.",
+      "categorie": "D\u00e9veloppement",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131",
+        "publicId": "angular-performance"
+      }
+    },
+    {
+      "title": "Introduction \u00e0 la programmation fonctionnelle avec JavaScript",
+      "slug": "programmation-fonctionnelle-javascript",
+      "description": "D\u00e9couvrez les concepts cl\u00e9s de la programmation fonctionnelle et comment les appliquer en JavaScript.",
+      "content": "La programmation fonctionnelle est un paradigme de programmation qui met l\'accent sur l\'utilisation de fonctions pures et l\'\u00e9vitement des effets de bord. Dans cet article, nous explorerons les concepts fondamentaux de la programmation fonctionnelle et comment les mettre en pratique avec JavaScript.\n\n## Les concepts cl\u00e9s de la programmation fonctionnelle\n\n### Les fonctions pures\nUne fonction pure est une fonction qui :\n1. Donne toujours le m\u00eame r\u00e9sultat avec les m\u00eames arguments\n2. N'a pas d'effets de bord\n3. Ne modifie pas les donn\u00e9es en dehors de son port\u00e9e\n\n```javascript\n// Exemple de fonction pure\nfunction add(a, b) {\n    return a + b;\n}\n\n// Exemple de fonction impure\nlet count = 0;\nfunction increment() {\n    count++; // Effet de bord\n    return count;\n}\n```\n\n### Les avantages de la programmation fonctionnelle\n\n| Avantage | Description |\n|----------|-------------|\n| Testabilit\u00e9 | Les fonctions pures sont plus faciles \u00e0 tester |\n| R\u00e9utilisation | Les fonctions peuvent \u00eatre r\u00e9utilis\u00e9es facilement |\n| D\u00e9bogage | Les bugs sont plus faciles \u00e0 identifier |\n| Parall\u00e9lisation | Les op\u00e9rations peuvent \u00eatre ex\u00e9cut\u00e9es en parall\u00e8le |\n\n### Les concepts avanc\u00e9s\n\n#### Les fonctions de premier ordre\nEn JavaScript, les fonctions sont des citoyens de premier ordre, ce qui signifie qu'elles peuvent \u00eatre :\n- Pass\u00e9es comme arguments\n- Retourn\u00e9es par d'autres fonctions\n- Stock\u00e9es dans des variables\n- Stock\u00e9es dans des objets ou des tableaux\n\n```javascript\n// Exemple de fonction de premier ordre\nfunction multiplier(n) {\n    return function(x) {\n        return x * n;\n    };\n}\n\nconst doubler = multiplier(2);\nconsole.log(doubler(5)); // 10\n```\n\n#### Les fonctions curry\u00e9es\nLe currying est une technique qui transforme une fonction qui prend plusieurs arguments en une s\u00e9rie de fonctions qui prennent un seul argument.\n\n```javascript\n// Fonction normale\nfunction add(a, b) {\n    return a + b;\n}\n\n// Fonction curry\u00e9e\nfunction addCurried(a) {\n    return function(b) {\n        return a + b;\n    };\n}\n\n// Utilisation\nconst add5 = addCurried(5);\nconsole.log(add5(3)); // 8\n```\n\n### Les biblioth\u00e8ques fonctionnelles\n\n| Biblioth\u00e8que | Description |\n|--------------|-------------|\n| Lodash | Une biblioth\u00e8que compl\u00e8te de fonctions utilitaires |\n| Ramda | Une biblioth\u00e8que purement fonctionnelle |\n| Immutable.js | Une biblioth\u00e8que pour les donn\u00e9es immuables |\n\n### Citation\n> \"La programmation fonctionnelle n'est pas une religion, mais un outil puissant pour \u00e9crire du code plus propre et plus maintenable.\"\n> \u0097 John Carmack\n\n### Meilleures pratiques\n\n1. \u00c9vitez les mutations\n2. Utilisez les fonctions pures\n3. Pr\u00e9f\u00e9rez la composition aux h\u00e9ritages\n4. Utilisez les biblioth\u00e8ques fonctionnelles quand c'est appropri\u00e9\n5. Documentez vos fonctions\n\n### Conclusion\nLa programmation fonctionnelle offre de nombreux avantages, mais il est important de l'appliquer de mani\u00e8re équilibr\u00e9e. Comme tout paradigme de programmation, elle a ses forces et ses faiblesses. L'important est de comprendre ces concepts et de savoir quand les utiliser.",
+      "categorie": "D\u00e9veloppement",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1498075392652-59fe004397b5",
+        "publicId": "functional-js"
+      }
+    },
+    {
+      "title": "Cr\u00e9er un portfolio interactif avec Three.js",
+      "slug": "portfolio-3d-threejs",
+      "description": "D\u00e9couvrez comment ajouter des effets 3D \u00e0 votre portfolio avec Three.js.",
+      "content": "Three.js est une biblioth\u00e8que JavaScript qui permet de cr\u00e9er des graphiques 3D dans le navigateur. Dans cet article, nous allons explorer comment cr\u00e9er un portfolio interactif avec des effets 3D impressionnants.\n\n## Introduction \u00e0 Three.js\n\nThree.js est une biblioth\u00e8que JavaScript qui facilite la cr\u00e9ation de graphiques 3D dans le navigateur. Elle est particulierement adapt\u00e9e pour :\n- Cr\u00e9er des animations 3D\n- Visualiser des donn\u00e9es en 3D\n- Ajouter des effets visuels impressionnants\n- Cr\u00e9er des jeux en 3D\n\n### Installation\n\n```bash\nnpm install three\n```\n\n### Structure de base\n\n```javascript\n// Configuration de base\nconst scene = new THREE.Scene();\ncamera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\n// Configuration du renderer\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\n// Position de la cam\u00e9ra\ncamera.position.z = 5;\n\n// Animation\nfunction animate() {\n    requestAnimationFrame(animate);\n    renderer.render(scene, camera);\n}\nanimate();\n```\n\n### Les types d'objets 3D\n\n| Type | Description | Exemple |\n|------|-------------|---------|\n| Mesh | Objet 3D avec g\u00e9om\u00e9trie et mat\u00e9riau | Cube, Sphere |\n| Light | Source de lumi\u00e8re | PointLight, DirectionalLight |\n| Camera | Point de vue | PerspectiveCamera, OrthographicCamera |\n\n### Cr\u00e9ation d'un cube\n\n```javascript\n// G\u00e9om\u00e9trie\nconst geometry = new THREE.BoxGeometry();\n\n// Mat\u00e9riau\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\n\n// Mesh\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n```\n\n### Animation interactive\n\n```javascript\n// Rotation\nfunction animate() {\n    requestAnimationFrame(animate);\n    cube.rotation.x += 0.01;\n    cube.rotation.y += 0.01;\n    renderer.render(scene, camera);\n}\n\n// Interaction\nwindow.addEventListener('click', () => {\n    cube.scale.x += 0.1;\n    cube.scale.y += 0.1;\n    cube.scale.z += 0.1;\n});\n```\n\n### Meilleures pratiques\n\n1. Optimisez les performances :\n   - Limitez le nombre d'objets\n   - Utilisez des groupes pour les objets similaires\n   - Impl\u00e9mentez des techniques d'optimisation\n\n2. Gestion des ressources :\n   - Chargez les assets de mani\u00e8re asynchrone\n   - Utilisez des textures compress\u00e9es\n   - Impl\u00e9mentez un syst\u00e8me de cache\n\n3. Accessibilit\u00e9 :\n   - Ajoutez des alternatives pour les utilisateurs qui ne supportent pas WebGL\n   - Fournissez des contr\u00f4les clairs\n   - Respectez les normes WCAG\n\n### Exemples d'utilisation\n\n| Usage | Description |\n|-------|-------------|\n| Portfolio | Animations 3D pour mettre en valeur les projets |\n| Visualisation de donn\u00e9es | Repr\u00e9sentations 3D des donn\u00e9es |\n| Jeux | Cr\u00e9ation de jeux 3D interactifs |\n| E-commerce | Visualisation 3D des produits |\n\n### Ressources utiles\n\n- Documentation officielle : [threejs.org/docs](https://threejs.org/docs)\n- Exemples : [threejs.org/examples](https://threejs.org/examples)\n- Tutoriels : [threejsfundamentals.org](https://threejsfundamentals.org)",
+      "categorie": "UI/UX",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1510096520728-72a4608a6641",
+        "publicId": "threejs-portfolio"
+      }
+    },
+    {
+      "title": "Introduction \u00e0 la cybers\u00e9curit\u00e9 pour les d\u00e9veloppeurs",
+      "slug": "cybersecurite-developpeurs",
+      "description": "Les bases de la cybers\u00e9curit\u00e9 que tout d\u00e9veloppeur doit conna\u00eetre.",
+      "content": "# Introduction \u00e0 la cybers\u00e9curit\u00e9\n\n## Menaces courantes\n\n### Injection SQL\n\n```sql\nSELECT * FROM users WHERE username = 'admin' OR '1'='1' AND password = 'password'\n```\n\nPour se prot\u00e9ger :\n1. Utilisez des requ\u00eates pr\u00e9par\u00e9es\n2. \u00c9chappez les entr\u00e9es utilisateur\n3. Impl\u00e9mentez une authentification forte\n\n### XSS (Cross-Site Scripting)\n\nTypes d'XSS :\n- Stored XSS : Le code malveillant est stock\u00e9 sur le serveur\n- Reflected XSS : Le code malveillant est inject\u00e9 dans l'URL\n- DOM XSS : Le code malveillant est inject\u00e9 via le DOM\n\n### Vuln\u00e9rabilit\u00e9s OWASP Top 10\n\n| Rang | Vuln\u00e9rabilit\u00e9 | Impact |\n|------|--------------|--------|\n| 1 | Injection | Critique |\n| 2 | Authentification faible | \u00c9lev\u00e9 |\n| 3 | XSS | \u00c9lev\u00e9 |\n| 4 | Configuration s\u00e9curis\u00e9e | Moyen |\n| 5 | Gestion des sessions | Moyen |\n\n### Bonnes pratiques\n\n1. Gestion des mots de passe\n   - Utilisez des hachages forts (bcrypt, Argon2)\n   - Impl\u00e9mentez un syst\u00e8me de verrouillage\n   - Utilisez des mots de passe uniques\n\n2. Validation des entr\u00e9es\n   - \u00c9chappez les entr\u00e9es utilisateur\n   - Utilisez des r\u00e9gular expressions\n   - Impl\u00e9mentez des limites de taille\n\n3. Gestion des sessions\n   - Utilisez des tokens de session\n   - Impl\u00e9mentez un timeout\n   - Secure les cookies\n\n4. Configuration s\u00e9curis\u00e9e\n   - D\u00e9sactivez les fonctionnalit\u00e9s inutilis\u00e9es\n   - Mettez \u00e0 jour r\u00e9guli\u00e8rement\n   - Utilisez des certificats SSL\n\n### S\u00e9curit\u00e9 des API\n\n```javascript\n// Bonne pratique pour les API REST\nconst express = require('express');\nconst app = express();\nconst helmet = require('helmet');\n\napp.use(helmet()); // Protection des headers\napp.use(express.json()); // Validation JSON\n\n// Rate limiting\nconst rateLimit = require('express-rate-limit');\napp.use(rateLimit({\n    windowMs: 15 * 60 * 1000, // 15 minutes\n    max: 100 // Limite de requ\u00eates\n}));\n```\n\n### S\u00e9curit\u00e9 des donn\u00e9es\n\n| Type | Description | Protection |\n|------|-------------|------------|\n| Donn\u00e9es sensibles | Informations personnelles | Chiffrement |\n| Donn\u00e9es d'authentification | Mots de passe | Hachage |\n| Donn\u00e9es de transaction | Paiements | Tokenisation |\n\n### Ressources utiles\n\n- OWASP : [owasp.org](https://owasp.org)\n- NIST : [nist.gov](https://nist.gov)\n- SANS Institute : [sans.org](https://sans.org)",
+      "categorie": "S\u00e9curit\u00e9",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
+        "publicId": "cybersecurity"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "Calculatrice en ligne",
+      "description": "Une calculatrice simple et \u00e9l\u00e9gante avec des op\u00e9rations de base.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/username/calculator",
+      "demo": "https://username.github.io/calculator"
+    },
+    {
+      "title": "Portfolio interactif",
+      "description": "Un portfolio moderne avec des animations 3D et des effets visuels impressionnants.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Three.js"],
+      "github": "https://github.com/username/portfolio",
+      "demo": "https://username.github.io/portfolio"
+    },
+    {
+      "title": "Application de gestion de t\u00e2ches",
+      "description": "Une application de gestion de t\u00e2ches avec synchronisation en temps r\u00e9el.",
+      "technologies": ["Angular", "Firebase", "TypeScript"],
+      "github": "https://github.com/username/todo-app",
+      "demo": "https://username.github.io/todo-app"
+    }
+  ],
+  "tricks": [
+    {
+      "title": "S\u00e9lectionner les él\u00e9ments en cascade avec CSS",
+      "description": "Utilisez l'op\u00e9rateur \":has()\" pour s\u00e9lectionner des él\u00e9ments qui contiennent des él\u00e9ments sp\u00e9cifiques.",
+      "code": ".parent:has(.child) {\n  background-color: yellow;\n}"
+    },
+    {
+      "title": "Cr\u00e9er des animations fluides avec CSS",
+      "description": "Utilisez les propri\u00e9t\u00e9s CSS pour cr\u00e9er des animations fluides et r\u00e9actives.",
+      "code": ".element {\n  transition: transform 0.3s ease-in-out;\n}\n\n.element:hover {\n  transform: scale(1.1);\n}"
+    },
+    {
+      "title": "Optimiser les performances des boucles",
+      "description": "Utilisez des techniques avanc\u00e9es pour optimiser les boucles JavaScript.",
+      "code": "// Boucle optimis\u00e9e\nconst array = [/* ... */];\nfor (let i = 0, len = array.length; i < len; i++) {\n  // Traitement\n}"
+    }
+  ]
+}

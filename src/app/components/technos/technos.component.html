@@ -1,0 +1,28 @@
+<div class="px-4 sm:px-10">
+    <div class="container flex flex-col gap-8 items-center">
+        <div class="flex flex-col gap-3 items-center">
+            <app-title [texte]="'TECHNOLOGIES'"></app-title>
+            <h2 class="text-center text-2xl font-bold text-gray-800">Technologies que j'utilise</h2>
+            <p class="text-center text-gray-600 max-w-2xl">Voici les technologies que j'utilise régulièrement dans mes
+                projets</p>
+        </div>
+
+        <div class="max-w-full w-full">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let tech of techno">
+                    <div class="p-6">
+                        <div class="bg-white rounded-lg  hover:shadow transition-shadow duration-300">
+                            <div class="w-24 h-24 mx-auto">
+                                <img [src]="tech.src" [alt]="tech.title" class="w-full h-full object-contain mx-auto"
+                                    loading="lazy">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h3 class="text-gray-700 font-medium">{{ tech.title }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

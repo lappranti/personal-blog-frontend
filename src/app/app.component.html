@@ -1,18 +1,5 @@
-<div class="wrapper flex flex-col min-h-screen relative">
-    <div class="app-container px-4 sm:px-10 pt-4 grow  flex flex-col">
-        <div class="main-container grow flex flex-col  ">
-            <div class="sticky top-0 left-0 w-full z-10">
-                <app-header></app-header>
-            </div>
-            <div
-                class="main-content md:pt-12 pt-8   transition-all duration-300 mx-2 px-2 sm:px-4   grow   flex flex-col  ">
-                <div class="grow">
-                    <router-outlet />
-                </div>
-                <div class="w-full h-[1px]  md:mt-12 sm:mt-8 mt-6 mb-6 transition-all duration-300"
-                    [ngClass]="currentTheme==='light'?'bg-[#EFEDEB]':'bg-[#34302D]'"></div>
-                <app-footer></app-footer>
-            </div>
-        </div>
-    </div>
+<div class="flex flex-col ">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
 </div>

@@ -12,9 +12,12 @@ import { RouterLink } from '@angular/router';
 export class SocialLinksComponent {
   socialLinks = [
     {
-      icon: './images/logo-linkedin.svg',
+      icon: './images/LinkedIn.svg',
       url: 'https://www.linkedin.com/in/sarre-ndeury-02054214a/',
     },
-    { icon: './images/logo-github.svg', url: 'https://github.com/lappranti' },
+    {
+      icon: './images/github.svg',
+      url: 'https://github.com/lappranti',
+    },
   ];
 }

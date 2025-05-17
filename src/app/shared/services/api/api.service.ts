@@ -16,14 +16,20 @@ export class ApiService {
   // }
 
   getAllPosts(page: number, limit: number): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}?page=${page}&limit=${limit}`);
+    return this.http.get<any>(
+      `${this.baseUrl}/articles?page=${page}&limit=${limit}`
+    );
   }
 
   getLatestArticles() {
-    return this.http.get<Article[]>(`${this.baseUrl}/latest`);
+    return this.http.get<Article[]>(`${this.baseUrl}/articles/latest`);
   }
 
   getOnePost(slug: string) {
-    return this.http.get<Article>(`${this.baseUrl}/${slug}`);
+    return this.http.get<Article>(`${this.baseUrl}/articles/${slug}`);
+  }
+
+  newsletterSubscribe(payload: { email: string }) {
+    return this.http.post(`${this.baseUrl}/newsletter/subscribe`, payload);
   }
 }

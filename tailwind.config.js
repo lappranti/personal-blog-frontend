@@ -12,7 +12,12 @@ module.exports = {
         "2xl": "1536px",
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        "primary-500": "#22C55E",
+        "primary-100": "#DCFCE7",
+      },
+    },
   },
   plugins: [],
 };
